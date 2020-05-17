@@ -1,0 +1,1 @@
+global callsfunction count_calls ()  persistent calls1 = 0;  ++calls1;endfunctionfor i = 1:3  count_calls ();endforassert(isglobal('calls1'),false)function y = foo ()      persistent y = 0;  # Not allowed!endfunctionfail('foo()','can''t make function parameter y persistent')
