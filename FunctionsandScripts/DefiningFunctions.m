@@ -1,0 +1,1 @@
+rehashfunction f=wakeup      f= "a";endfunctionisequal(wakeup(),'a')
