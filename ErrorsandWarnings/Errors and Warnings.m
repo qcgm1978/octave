@@ -1,0 +1,1 @@
+function f (arg1)  if (nargin == 0)    error ("not enough input arguments");  endifendfunctionfail('f()','not enough input arguments')fail('f1()','nargin != 1')function f1()   g (); endfunction g ()   h (); endfunction h ()   nargin == 1 || error ("nargin != 1");   end

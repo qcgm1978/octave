@@ -1,0 +1,1 @@
+vmax(ones(2,2))function [max, idx] = vmax (v)  idx = 1;  if(length(v)<2)  error('arguments not correct')endifmax = v (idx);for i = 2:length (v)  if (v (i) > max)    max = v (i);    idx = i;  endif endfor  endfunction

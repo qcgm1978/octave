@@ -1,0 +1,1 @@
+assert(nargin,2)create_data()#x=1#save('mydata',x,'y')#process_data()function process_data   load mydataendfunctionfunction create_data  x = linspace (0, 10, 10); y = sin (x);  save mydata x yendfunctionfunction save (file, name1, name2)  f = open (file);  save_var (f, name1, evalin ("caller", name1));  save_var (f, name2, evalin ("caller", name2));  endfunction

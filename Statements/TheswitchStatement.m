@@ -1,0 +1,1 @@
+#global A#isequal(getVal(7),"variable is either 6 or 7\n")#function f=getVal(A)#    global A#  switch (A)#    case { 6, 7 }#      f= "variable is either 6 or 7\n"#      otherwise#        printf ("variable is neither 6 nor 7\n");#      endswitch#      endfunction

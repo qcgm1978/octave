@@ -1,0 +1,1 @@
+x=y=2;assert(x++,2)assert(++y,3)isequal(x,y,3)assert(-x^2,-9)
