@@ -1,0 +1,1 @@
+names = ["Mary Jones";"John Adams";"Elizabeth Young";"Paul Burns";"Ann Spencer"];fail('names = split(names)')#names = [names(:,2) names(:,1)];#names(:,1) = names(:,1) + ','#names = join(names)

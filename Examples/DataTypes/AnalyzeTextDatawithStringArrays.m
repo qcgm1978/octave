@@ -1,0 +1,1 @@
+sonnets = fileread('sonnets.txt');sonnets()sonnets = char(sonnets);#sonnets = splitlines(sonnets);sonnets(1:5)
