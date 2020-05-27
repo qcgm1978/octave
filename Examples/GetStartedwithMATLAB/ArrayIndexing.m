@@ -1,0 +1,1 @@
+A = magic(4)isequal(A(4,2),14)isequal(A(2),5)fail('A(4,5)','but A has size 4x4')A(4,5) = 17isequal(size(A),[4,5])isequal(A(1:3,2),[2;11;7])isequal(A(3,:),[9    7    6   12    0])B = 0:10:100for i=1:11  C(i)=10*(i-1)endforisequal(B,C,[0    10    20    30    40    50    60    70    80    90   100])
