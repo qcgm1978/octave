@@ -1,0 +1,1 @@
+A = magic(4);B=[A(1,:);A(3,:);A(4,:)];A(2,:) = [];isequal(A,B)B = rand(3,3,3);isequal(size(B),[3,3,3])B(:,:,1) = [];isequal(size(B),[3,3,2])
