@@ -1,0 +1,1 @@
+clcA = 0x2A;B = 0b101010;C=42;isequal(class(A),class(B),class(C),'double')isequal(typeinfo(A),typeinfo(B),typeinfo(C),'scalar')isequal(A,B,C,42)
