@@ -1,0 +1,1 @@
+clcfail("t = datetime('now') + calyears(0:2) + calmonths(0:2) + hours(20:20:60)","'datetime' undefined")fail('[y,m,d] = ymd(t)',"'ymd' undefined")

@@ -1,0 +1,1 @@
+clcrehashload ('patients.txt')BloodPressure = [Systolic Diastolic];Gender = categorical(Gender);whos('Gender','Age','Smoker','BloodPressure')

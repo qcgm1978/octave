@@ -1,0 +1,1 @@
+clcload( 'patients.txt')whos

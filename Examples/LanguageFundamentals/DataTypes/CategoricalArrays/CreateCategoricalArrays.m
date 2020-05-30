@@ -1,0 +1,1 @@
+clcstate = {'MA','ME','CT','VT','ME','NH','VT','MA','NH','CT','RI'};fail('state = categorical(state)',"'categorical' undefined")x = rand(100,1)*50;catnames = {'small','medium','large'};fail("binnedData = discretize(x,[0 15 35 50],'categorical',catnames);","'discretize' undefined")
