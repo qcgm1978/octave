@@ -1,0 +1,1 @@
+clcclearC = {1, 2, 3};isequal(size(C),[1 3])isequal(C(2),C(1,2),{2})C{4,4} = 44;isequal(C(2),{[]})isequal(size(C),[4 4])isequal(C(4,4),{44})C{5,5} = [];isequal(C(5),{[]})isequal(size(C),[5 5])C(1,8)='8';isequal(size(C),[5 8])

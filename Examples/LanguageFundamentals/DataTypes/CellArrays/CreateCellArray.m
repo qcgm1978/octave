@@ -1,0 +1,1 @@
+clcclearmyCell = {1, 2, 3;'text', rand(5,10,2), {11; 22; 33}};isequal(typeinfo(myCell),'cell')isequal(size(myCell),[2 3])isequal(size(myCell(2,3)),[1 1])C = {};isempty(C)emptyCell = cell(3,4,2);isequal(size(emptyCell),[3 4 2])isequal(typeinfo(emptyCell),class(emptyCell),'cell')

@@ -1,0 +1,1 @@
+clcclearC = {1, 2, 3; 4, 5, 6; 7, 8, 9};isequal(C(2,2),{5})isequal(C{2,2},5)C{2,2} = [];isequal(C(:,2),{2 ;[]; 8})C(2,:) = [];#Delete sets of cells using standard array indexing with smooth parentheses, ().isequal(C{2,3},9)isequal(size(C),[2 3])
