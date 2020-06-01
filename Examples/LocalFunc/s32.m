@@ -1,0 +1,1 @@
+% Copyright 2020 Youth#clear#clcrehashfunction fh = octaveS32  fh.s32=@_s32;  fh.s8=@_s8;endfunction s32 =_s32(num)  if(  isnumeric(num))  s32=int32(num);  else    s32=int32(str2num(num(1:length(num)-3)));  endifendfunction s8 =_s8(num)  if(  !isnumeric(num))  str=num(1:length(num)-2);  num=str2num(str);endifs8=-bitset(bitand(num,0),1,1);end

@@ -1,0 +1,1 @@
+% Copyright 2020 Youthclcrehashfunction fh = octaveString  fh.string=@_string;endfunction str = _string(num)  if(iscell(num))  str =cell2mat(num(2,:));    else    str = num2str(num);  endifend

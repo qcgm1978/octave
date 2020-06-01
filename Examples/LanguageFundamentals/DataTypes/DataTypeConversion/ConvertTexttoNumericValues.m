@@ -1,0 +1,1 @@
+clcclearX = str2double('3.1416');isfloat(X)str = ["2.718","3.1416";       "137","0.015"];          X = str2double(str);isnan(X(1))load ('balances.txt')balances

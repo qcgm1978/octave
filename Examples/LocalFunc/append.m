@@ -1,0 +1,1 @@
+% Copyright 2020 Youthrehashfunction fh = octaveAppend  fh.append=@_append;endfunction str = _append(str,str2,str3)  try  append(str,str2,str3)  catch(e)  str = [str,str2,str3];  end_try_catchend

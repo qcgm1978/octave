@@ -1,0 +1,1 @@
+clcclearfun1 = @sin;fun2 = @sin;isequal(fun1,fun2)#fail('fun3=sin','Invalid call to sin')A = 5;h1 = @(x)A * x.^2;h2 = @(x)A * x.^2;fail('assert(h1,h2)')h1 = @(x)A * x.^2;h2 = h1;isequal(h1,h2)

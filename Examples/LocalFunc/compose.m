@@ -1,0 +1,1 @@
+% Copyright 2020 Youthrehashfunction fh = octaveCompose  fh.compose=@_compose;endfunction str = _compose(str,num)  str = num2str(num,str);end
