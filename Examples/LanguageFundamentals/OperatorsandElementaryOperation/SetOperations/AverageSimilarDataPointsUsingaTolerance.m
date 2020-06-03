@@ -1,0 +1,1 @@
+clcclear#clfxy = rand(100,2)*6-3;z = peaks(xy(:,1),xy(:,2)) + 0.5-rand(100,1);A = [xy z];plot3(A(:,1), A(:,2), A(:,3), '.')view(-28,32)disp('finish')

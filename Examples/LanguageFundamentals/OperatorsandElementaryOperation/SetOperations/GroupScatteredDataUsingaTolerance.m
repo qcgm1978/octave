@@ -1,0 +1,1 @@
+x = rand(10000,2);[a,b] = meshgrid(0:0.1:1);gridPoints = [a(:), b(:)];plot(x(:,1), x(:,2), '.')hold onclfplot(gridPoints(:,1), gridPoints(:,2), 'xr', 'Markersize', 6)
