@@ -1,0 +1,1 @@
+clc clearfail("T = readtable('airlinesmall_subset.xlsx','Sheet','2008');","'readtable' undefined")#T(1:10,1:10)

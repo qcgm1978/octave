@@ -1,0 +1,1 @@
+clcclearfail("opts = detectImportOptions('airlinesmall.csv');","'detectImportOptions' undefined")

@@ -1,0 +1,1 @@
+clcclear#type PerformFTPFileOperations.mftpobj = ftp('ftp.ngdc.noaa.gov')dir(ftpobj)mget(ftpobj,'INDEX.txt');type INDEX.txtcd(ftpobj,'pub')dir(ftpobj)close(ftpobj)

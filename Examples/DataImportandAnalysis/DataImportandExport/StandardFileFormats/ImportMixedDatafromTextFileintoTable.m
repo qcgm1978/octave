@@ -1,0 +1,1 @@
+clcclearfail("T = readtable('outages.csv');","'readtable' undefined")#head(T,5) % show first 5 rows of table

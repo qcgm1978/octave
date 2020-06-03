@@ -1,0 +1,30 @@
+                    National Centers for Environmental Information (NCEI), 
+                    formerly the National Geophysical Data Center (NGDC)
+
+                          INDEX of anonymous ftp area
+                               ftp.ngdc.noaa.gov
+
+DIRECTORY/FILE DESCRIPTION OF CONTENTS
+-------------- -----------------------------------------------------------------
+pub/           Public access area 
+DMSP/          Defense Meteorological Satellite Data Archive
+geomag/        Geomagnetism and geomagnetics models
+hazards/       Natural Hazards data, volcanoes, tsunamis, earthquakes
+international/ International program information on IAGA/Oersted/wdc
+ionosonde/     Ionosonde data
+mgg/           Limited Marine Geology and Geophysics (most data in http area)
+OD/            Office of the Director
+Snow_Ice/      Snow and Ice Data Center
+Solid_Earth/   Historic Solid Earth Geophysics
+STP/           Solar-Terrestrial Physics
+tmp/           Pickup area for temporary outgoing data
+wdc/           World Data Service for Geophysics, formerly World Data Centers
+-------------- -----------------------------------------------------------------
+Please see file README.txt in this directory for more information and how to 
+contact NCEI. Direct E-mail inquiries to ncei.info@noaa.gov
+
+Also see our web site: http://www.ngdc.noaa.gov/
+
+NCEI is part of the:
+U.S. Department of Commerce, National Oceanic and Atmospheric Administration (NOAA),
+National Environmental Satellite, Data and Information Service (NESDIS)

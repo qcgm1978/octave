@@ -1,0 +1,1 @@
+clcclearlocation = '/Users/zhanghongliang/Documents/Octave/Examples/DataImportandAnalysis/DataImportandExport/TextFiles';dir(location)fail('ds = tabularTextDatastore(location)',"'tabularTextDatastore' undefined")

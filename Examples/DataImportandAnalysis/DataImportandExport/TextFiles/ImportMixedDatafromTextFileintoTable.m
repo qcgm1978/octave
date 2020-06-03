@@ -1,0 +1,1 @@
+clcclear#T = readtable('outages.csv');

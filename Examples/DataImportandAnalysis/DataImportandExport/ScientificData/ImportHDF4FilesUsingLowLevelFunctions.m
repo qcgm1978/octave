@@ -1,0 +1,1 @@
+fail('import matlab.io.hdf4.*','the import function is not yet implemented in Octave')
