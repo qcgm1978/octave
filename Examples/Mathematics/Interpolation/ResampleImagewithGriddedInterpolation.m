@@ -1,0 +1,1 @@
+clcclearfail("A = imread('music.jpg');","imread: unable to find file 'music.jpg'")#https://stackoverflow.com/questions/20956551/imread-stopped-working-on-octaveA = file_in_path('/Users/zhanghongliang/Documents/Octave/Examples/Mathematics/Interpolation', 'ngc6543a.jpg');imshow(A)F = griddedInterpolant(double(A));

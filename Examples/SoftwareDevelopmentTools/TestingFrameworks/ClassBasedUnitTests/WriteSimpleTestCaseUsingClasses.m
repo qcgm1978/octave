@@ -1,0 +1,1 @@
+clcclear% Copyright 2015 The MathWorks, Inc.classdef SolverTest < matlab.unittest.TestCase    methods (Test)    endend

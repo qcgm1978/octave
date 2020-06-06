@@ -1,0 +1,1 @@
+edit(fullfile(matlabroot,"extern","examples","cpp_interface","cppUseCases.hpp"))

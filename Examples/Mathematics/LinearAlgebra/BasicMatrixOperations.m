@@ -1,0 +1,7 @@
+clccleara = [1 2 3 4 6 4 3 4 5];b = a + 2;B=[];for i=1:length(a)  B(i)=a(i)+2;
+  endfor  isequal(b,B)
+plot(b)grid onbar(b)xlabel('Sample #')ylabel('Pounds')plot(b,'*')axis([0 10 0 10])clfA = [1 2 0; 2 5 -1; 4 10 -1];B = A';C=[];for i=1:numel(A)  [row,col]=ind2sub(size(A),i);  C(col,row)=A(i);
+endfor
+isequal(C,B)b = [1;3;5];isequal(x = A\b,inv(A)*b,A^-1*b,A**-1*b)fail('x1=b/A','nonconformant arguments')function invMat=getTwoInv(mat)  invMat=[];if(size(mat)==[2 2])  coef=1/(mat(1)*mat(4)-mat(2)*mat(3));  mat1=[mat(4),-mat(3);-mat(2),mat(1)];  invMat=coef*mat1;endif  
+endfunction
+Two=[4,7;2,6];twoInv=inv(Two);twoInv1=getTwoInv(Two);isequal(twoInv,twoInv1)isequal(twoInv*Two,twoInv1*Two)isequal(x=A\b,[1;0;-1])isequal(r=A*x-b,zeros(3,1))matrix=[-6 3;4 5];eigenvector=[1;4];eigenvector2=[-3;1];eigenvalue=6;eigenvalue2=-7;isequal(eigenvalue*eye(2)*eigenvector,eye(2)*eigenvector*eigenvalue,[6 ;24])isequal(eye(2)*eigenvector,[1*1+0*4;0*1+1*4],eigenvector)Av=matrix*eigenvector;Av1=matrix*eigenvector2;lambdaV=eigenvalue*eigenvector;lambdaV1=eigenvalue2*eigenvector2;isequal(Av,lambdaV,eigenvector*eigenvalue,[-6*1+3*4;4*1+5*4],[6*1;6*4],[6;24])isequal(Av1,lambdaV1,eigenvector2*eigenvalue2,[-6*-3+3*1;4*-3+5*1],[-7*-3;-7*1],[21;-7])mat=[2 0 00 4 50 4 3];eig(A)svd(A)p = round(poly(A))roots(p)q = conv(p,p)r = conv(p,q)plot(r);whosAsqrt(-1)

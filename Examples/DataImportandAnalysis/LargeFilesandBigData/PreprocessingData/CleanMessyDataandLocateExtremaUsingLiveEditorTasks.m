@@ -1,0 +1,1 @@
+  clc  clear  x = 1:100;data = cos(2*pi*0.05*x+2*pi*rand) + 0.5*randn(1,100);data(20:20:80) = NaN;data(10:20:90) = [-50 40 30 -45 35];plot(x,data)

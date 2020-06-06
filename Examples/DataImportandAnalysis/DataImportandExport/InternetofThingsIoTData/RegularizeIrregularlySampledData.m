@@ -1,0 +1,1 @@
+clccleardata = thingSpeakRead(12397,'NumMin',60,'Fields',4,'outputFormat','timetable');

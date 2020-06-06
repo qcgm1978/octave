@@ -1,0 +1,1 @@
+clcclearhelpFile = which('help');[helpPath,name,ext] = fileparts(helpFile)helpPath = fileparts(helpFile)[helpPath,name] = fileparts(helpFile)[~,name,ext] = fileparts(helpFile)[~,~,ext] = fileparts(helpFile)

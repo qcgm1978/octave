@@ -1,0 +1,1 @@
+clcclear#closeY = [5,2,1     8,7,3     9,8,6     5,5,5     4,3,2];figurebar(Y)#closefigurebar(Y,'stacked')Y = [5,2,1     8,7,3     9,8,6     5,5,5     4,3,2];#     closefigurebarh(Y)Y = [5,2,1     8,7,3     9,8,6     5,5,5     4,3,2];figurebar3(Y)shg

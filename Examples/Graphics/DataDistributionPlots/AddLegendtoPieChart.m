@@ -1,0 +1,1 @@
+clcclearclosex = [1,2,3];figurepie(x)labels = {'Product A','Product B','Product C'};legend(labels,'Location','southoutside','Orientation','horizontal')shg

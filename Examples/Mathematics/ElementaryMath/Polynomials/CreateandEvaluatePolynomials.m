@@ -1,0 +1,1 @@
+clcclearp = [1 -4 4];p = [4 0 0 -3 2 33];isequal(polyval(p,2),4*2^5-3*2^2+2*2^1+33,153)X = [2 4 5; -1 0 3; 7 1 5];isequal(Y = polyvalm(p,X),4*X^5-3*X^2+2*X^1+33*eye(3,3))
