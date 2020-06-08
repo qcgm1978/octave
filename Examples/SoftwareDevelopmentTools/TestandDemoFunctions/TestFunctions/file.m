@@ -1,0 +1,1 @@
+%!test%! a = [1, 2, 3; 4, 5, 6]; %! b = [1; 2]; %! assert (kron (b, a), [ a; 2*a ]);%!assert (1+eps, 1, 2*eps) # absolute error%!assert (100+100*eps, 100, -2*eps) # relative error%! assert (isempty ([]))%! assert ([1, 2; 3, 4] > 0)

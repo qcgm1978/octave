@@ -1,0 +1,1 @@
+clcclearprintf ("%s\n", program_name ()); arg_list = argv ();for i = 1:nargin  printf (" %s", arg_list{i});   printf ("\n");endforisequal(program_name(),'octave-gui')isequal(typeinfo(arg_list(1)),'cell')function last_words ()   disp ("Bye bye");  pause()endfunctionatexit ("last_words");#news()info()

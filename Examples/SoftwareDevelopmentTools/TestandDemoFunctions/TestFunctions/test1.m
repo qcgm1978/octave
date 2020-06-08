@@ -1,0 +1,1 @@
+clccleartest sind;[n, nmax] = test ("sind");isequal(n,nmax)test file.mexit
