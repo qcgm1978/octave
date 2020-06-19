@@ -1,0 +1,3 @@
+clcclear allA=['a','b'];B=['a','bc'];ismatrix(A)ismatrix(B)fail('det(A)','A must be a square matrix')det(eye(2))a = {1 2 3};v = cellfun (@(x) det (x), a); # compute determinants v1 = cellfun (@det, a); # fasterisequal(v,v1)function bool=isIdentity(mat)  bool=true;  for i=1:numel(mat)    [row, col]=ind2sub(size(mat),i);    if(row==col&&mat(i)==1)    continue    elseif(row!=col&&mat(i)==0)    continue    else       bool=false;    endif  endfor  
+endfunction
+isIdentity(eye(2))isIdentity(eye(3))isIdentity([1,2,3;4,5,6])==0

@@ -1,0 +1,5 @@
+clcA=eye(3);B=rand(3,2);C=A*5;all(C(C==5))isequal(length(C(C==5)),3)function bool=issymmetry(mat,isInverse=false)  bool=true;  for i=1:numel(mat)/2    [row,col]=ind2sub(size(mat),i);        a=fixTo(mat(i));    b=fixTo(mat(col,row));    if(isInverse)    if(col==row&& a==0&&b==0)    continue;    elseif(a!=-b)    bool=false;    break;  endif  elseif(a!=b)  bool=false;  break;endifendfor
+endfunctionA=[1 2 3; 2 5 6; 3 6 1];AInverse=[0 2 3; -2 0 -6; -3 6 0];B=[4 20 30; 20 5 60; 30 60 1];
+isequal(issymmetric(A),issymmetry(A),issymmetric(B),issymmetry(B),true)isequal(transpose(A),A)isequal(transpose(B),B)isequal(transpose(A-B),transpose(A)-transpose(B),A-B)isequal(transpose(5*A),5*transpose(A),5*A)function bool=isSameOrder(mat1,mat2)bool=all(size(mat1)==size(mat2));
+endfunction
+isSameOrder(A,B)product=transpose(A*transpose(A));product1=transpose(A)*(A);isequal(issymmetric(product),issymmetry(product),issymmetric(product1),issymmetry(product1),true,1,[1])B=rand(3);C=transpose(B)*A*B;issymmetry(C)issymmetric(C,1e4)issymmetry(C,true)==0issymmetry(AInverse,true)isequal(transpose(AInverse),-AInverse)

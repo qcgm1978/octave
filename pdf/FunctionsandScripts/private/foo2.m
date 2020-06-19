@@ -1,0 +1,1 @@
+function y = foo2 (to_eval)   bar ();  eval (to_eval);  function bar ()    eval ("x = 100;");    eval ("y = x;");  endfunctionendfunction

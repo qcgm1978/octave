@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pub_example</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: 'all' } }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<style>
+body > * {
+  max-width: 42em;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+pre, code {
+  max-width: 50em;
+  font-family: monospace;
+}
+pre.oct-code {
+  border: 1px solid Grey;
+  padding: 5px;
+}
+pre.oct-code-output {
+  margin-left: 2em;
+}
+span.comment {
+  color: ForestGreen;
+}
+span.keyword {
+  color: Blue;
+}
+span.string {
+  color: DarkOrchid;
+}
+footer {
+  margin-top: 2em;
+  font-size: 80%;
+}
+a, a:visited {
+  color: Blue;
+}
+h2 {
+  font-family: "Roboto Condensed", serif;
+  margin-top: 1.5em;
+}
+h2 a, h2 a:visited {
+  color: Black;
+}
+</style>
+
+</head>
+<body>
+<h1>pub_example</h1>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#node1">Headline title</a></li>
+<li><a href="#node2">matlab comment style ('%') is supported as well %</a></li>
+</ul>
+<h2><a id="node1">Headline title</a></h2>
+<pre class="oct-code"><span class="comment">#</span>
+<span class="comment"># Some *bold*, _italic_, or |monospaced| Text with</span>
+<span class="comment"># a &lt;https://www.octave.org link to *GNU Octave*&gt;. ##</span>
+         <span class="comment"># "Real" Octave commands to be evaluated</span>
+         sombrero ()
+         <span class="comment"># persistent ignored</span>
+<span class="comment">#         eval('persistent calls1 = 0;')</span>
+<span class="comment">#        if(calls1==0)</span>
+<span class="comment">#         publish('/Users/zhanghongliang/Documents/Octave/FunctionsandScripts/pub_example.m')</span>
+<span class="comment">#         calls1++</span>
+<span class="comment">#         endif</span>
+</pre>
+<img src="pub_example-1.png" alt="pub_example-1.png"><h2><a id="node2">matlab comment style ('%') is supported as well %</a></h2>
+<ul>
+<li>Bulleted list item 1</li>
+<li>Bulleted list item 2</li>
+</ul>
+
+<pre class="oct-code"><span class="comment">%</span>
+         <span class="comment">% # Numbered list item 1</span>
+         <span class="comment">% # Numbered list item 2</span>
+</pre>
+
+<footer>
+<hr>
+<a href="https://www.octave.org">Published with GNU Octave 5.2.0</a>
+</footer>
+<!--
+##### SOURCE BEGIN #####
+## Headline title
+         #
+# Some *bold*, _italic_, or |monospaced| Text with
+# a <https://www.octave.org link to *GNU Octave*>. ##
+         # "Real" Octave commands to be evaluated
+         sombrero ()
+         # persistent ignored
+#         eval('persistent calls1 = 0;')
+#        if(calls1==0)
+#         publish('/Users/zhanghongliang/Documents/Octave/FunctionsandScripts/pub_example.m')
+#         calls1++
+#         endif
+%% matlab comment style ('%') is supported as well %
+% * Bulleted list item 1
+% * Bulleted list item 2
+         %
+         % # Numbered list item 1
+         % # Numbered list item 2
+##### SOURCE END #####
+-->
+</body>
+</html>

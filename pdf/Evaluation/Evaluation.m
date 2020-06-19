@@ -1,0 +1,1 @@
+eval ("A = acos(-1);")assert(A,3.1416,7e-5)assert(eval ('error ("This is a bad example");','lasterr ()'),'This is a bad example')s = evalc ("t = 42");t;assert(t,42)assert(typeinfo(s),'sq_string')s;#assert(s,'t =  42')

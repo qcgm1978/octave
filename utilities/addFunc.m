@@ -1,0 +1,1 @@
+function num=addFunc()  funcPath="/Users/zhanghongliang/Documents/Octave/utilities";  addpath(funcPath)  savepath()  endfunction

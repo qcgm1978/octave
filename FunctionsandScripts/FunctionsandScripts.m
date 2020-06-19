@@ -1,1 +1,0 @@
-global unionfunction [y, ia, ib] = union (a, b, varargin)#If the last argument to fcn is varargin the returned value is negativeendfunctionfunction [y, ia, ib] = union1 (a, b)endfunctionfunction [y, ia, ib] = union2 (a)endfunctionassert(nargin ("union"),-3)assert(nargin ("union1"),2)assert(nargin ("union2"),1)

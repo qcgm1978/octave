@@ -1,1 +1,0 @@
-f = @plus; isequal(f (2, 2),plus(2,2),4);#fail('f1 = plus','Invalid call to plus')function mydeletefcn (h, ~, msg)    (msg);endfunction#sombrero;set (gcf, "deletefcn", {@mydeletefcn, "Bye!\n"});close;

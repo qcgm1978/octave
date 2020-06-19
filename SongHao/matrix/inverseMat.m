@@ -1,0 +1,3 @@
+clcclear allx=rand(2);y=rand(2);function [bool,str]=proveRightDivision(x,y)bool=0;str='';c= fixnum(inv(y'));d=fixnum(inv(y)');if(  isequal  (c,d))isequal(transpose(  d*x),transpose(x)*transpose(d))a=fixnum(transpose(d));b=fixnum(inv(y));if(isequal(a,b))if(isequal(transpose(  d*x),transpose(x)*b))bool=1;str=strcat('transpose(x)*','fixnum(inv(y))');endifendifendif  
+endfunctionassert(x/y,(inv(y')*x')',1e-13)
+isequal(proveRightDivision(x,y),1)[~,str]=proveRightDivision(x,y);#assert(x/y,eval(str))

@@ -1,0 +1,1 @@
+clcclear all#Try using genpath. Given the base directory as input, genpath returns that base directory plus all subdirectories, recursive.#savepath()#Restore Octave’s path to its initial state at startup.function restore()  restoredefaultpath()endfunction#base_directory='/Users/zhanghongliang/Documents/Octave';#genpath(base_directory)#rmpath(genPath);

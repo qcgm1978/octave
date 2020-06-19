@@ -1,1 +1,0 @@
-rehashfunction fib=generateFib10(num)  fib = ones (1, num);  i = 3;  while (i <= num)    fib (i) = fib (i-1) + fib (i-2);    i++;  endwhileendfunctionfib=generateFib10(10);isequal( fib(10),55)fail('fib(11)','out of bound 10')

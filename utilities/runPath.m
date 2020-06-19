@@ -1,0 +1,1 @@
+function runPath(somePath)  files1=readdir (somePath)  addpath(somePath)  disp(files1)  for m=1:rows(files1)    file=files1{m,1}    if(!isempty(regexp(file,'m$')))    absolute=file_in_loadpath(file);    #      absolute=[somePath,'/',file]    run(absolute)  endifendforsavepath ()endfunction

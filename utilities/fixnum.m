@@ -1,0 +1,1 @@
+function num=fixnum(decimal=0,digit=4)  num=round(decimal*10^digit)/10^digit;endfunction

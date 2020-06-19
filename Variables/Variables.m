@@ -1,1 +1,0 @@
-global xassert(isglobal('x'))3^2 + 4^2;assert(ans,25)function f ()  global x  x = 2;endfunctionfail("assert(x,struct('a',1,'field2',2))")    f ()    assert(x,2)
