@@ -1,1 +1,1 @@
-function num=fixnum(decimal=0,digit=4)  num=round(decimal*10^digit)/10^digit;endfunction
+#Unlike a function file, a script file must not begin with the keyword function. If it does, Octave will assume that it is a function file, and that it defines a single function that should be evaluated as soon as it is defined.function num=fixnum(decimal=0,digit=4)  num=round(decimal*10^digit)/10^digit;endfunction
