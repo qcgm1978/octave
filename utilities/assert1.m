@@ -1,0 +1,1 @@
+function varargout=assert1(val1,val2,tol=0)  try  assert(val1,val2,tol);#  err=0  varargout{1}=1;  catch(e)  varargout{1}=0;  varargout{2}=e;  error(e)  end_try_catch  endfunction
