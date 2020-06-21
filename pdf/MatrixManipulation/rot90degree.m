@@ -1,0 +1,1 @@
+clcclear allfunction rotMat=rotate90(mat,k=1)  if(k>0)  n=mat;  for i=1:k  n=flip(transpose(n));    endfor  rotMat=n;  else  rotMat=fliplr(transpose(mat));  endifendfunctionA=[1, 2; 3, 4];isequal(rot90 (A),rotate90(A))isequal(rot90 (A, -1),rotate90(A,-1),rot90(A,3),rotate90(A,3),rot90(A,7),rotate90(A,7))
