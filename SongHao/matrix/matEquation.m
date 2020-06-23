@@ -1,5 +1,5 @@
 clc
-clear all
+#clear all
 A=[4 2 3;1 1 0; -1 2 3];
 #Ax=A+2x
 eyes1=eyes2=eyes=eye(length(A));
@@ -21,5 +21,11 @@ C=inv(A*B);
 D=inv(B)*inv(A);
 !all(all(C==D))
 all(all(fixnum(C)==fixnum(D)))
-allTrue(fixnum(C)==fixnum(D))
-allTrue(transpose(A*B)==transpose(B)*transpose(A))
+E=rand(3);
+allTrue(fixnum(C)==fixnum(D),all(all(fixnum(C)==fixnum(D))),transpose(A*B)==transpose(B)*transpose(A))
+assert1(inv(transpose(A)),transpose(inv(A)),1e-12)
+k=rand();
+assert1(inv(k*A),1/k*inv(A),1e-12)
+assert1(det(inv(A)),det(A)^-1,1e-12)
+assert1(inv(getAdjointMat(A)),det(A)^-1*A,1e-12)
+assert1(A*getAdjointMat(A),det(A)*eye(size(A)),1e-12)
