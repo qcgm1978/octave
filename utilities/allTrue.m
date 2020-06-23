@@ -1,0 +1,2 @@
+#https://stackoverflow.com/questions/3569933/is-it-possible-to-define-more-than-one-function-per-file-in-matlab-and-access-t#The only way to have multiple, separately accessible functions in a single file is to define STATIC METHODS using object-oriented programming. You'd access the function as myClass.static1(), myClass.static2() etc.function bool=allTrue(mat)  bool=all(all(mat));
+endfunction

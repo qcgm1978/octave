@@ -34,7 +34,7 @@ isequal(pow,156)
 
 #A=[1 1 1;2 1 3;1 1 4];
 A=rand(3);
-adjoint=getAlgebricComplement(A);
+adjoint=getAdjointMat(A);
 B=eye(3)*-3;
 E=eye(size(A));
 AE=det(A)*E;
