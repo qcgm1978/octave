@@ -1,1 +1,0 @@
-clcclear all#If expr is omitted, return a cell array of strings containing all the currently installed data typestInfo=typeinfo();isa(tInfo,'cell')#tInfo{:}str=[cellfun(@(x)cstrcat("'",x,"'; "),tInfo,'UniformOutput',false){:}](1:end-2);assert(eval(cstrcat('{',str,'}')),tInfo)

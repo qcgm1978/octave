@@ -1,0 +1,1 @@
+#delete zeros rows and columnsfunction rmRC(data)  data( ~any(data,2), : ) = [];  %rowsdata( :, ~any(data,1) ) = [];  %columnsendfunction

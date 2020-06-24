@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OverloadingandAutoloading</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: 'all' } }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<style>
+body > * {
+  max-width: 42em;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+pre, code {
+  max-width: 50em;
+  font-family: monospace;
+}
+pre.oct-code {
+  border: 1px solid Grey;
+  padding: 5px;
+}
+pre.oct-code-output {
+  margin-left: 2em;
+}
+span.comment {
+  color: ForestGreen;
+}
+span.keyword {
+  color: Blue;
+}
+span.string {
+  color: DarkOrchid;
+}
+footer {
+  margin-top: 2em;
+  font-size: 80%;
+}
+a, a:visited {
+  color: Blue;
+}
+h2 {
+  font-family: "Roboto Condensed", serif;
+  margin-top: 1.5em;
+}
+h2 a, h2 a:visited {
+  color: Black;
+}
+</style>
+
+</head>
+<body>
+<h1>OverloadingandAutoloading</h1>
+
+
+<pre class="oct-code">clc
+clear all
+<span class="comment">#x=linspace(0,pi);</span>
+subplot (2, 1, 1)
+fplot(@sin, [-10, 10])
+sin (0)
+<span class="keyword">function</span> y = sin (x)
+  y = cos (x);
+
+<span class="keyword">endfunction</span>
+subplot (2, 1, 2)
+fplot(@sin, [-10, 10])
+sin (0)
+builtin (<span class="string">"sin"</span>, 0)
+<span class="comment">#With no arguments, return a structure containing the current autoload map.</span>
+isa(autoload(),<span class="string">'struct'</span>)
+<span class="comment">#octaveMissing</span>
+</pre>
+
+<pre class="oct-code-output">ans = 0
+ans =  1
+ans = 0
+ans = 1
+</pre>
+<img src="OverloadingandAutoloading-1.png" alt="OverloadingandAutoloading-1.png">
+<footer>
+<hr>
+<a href="https://www.octave.org">Published with GNU Octave 5.2.0</a>
+</footer>
+<!--
+##### SOURCE BEGIN #####
+clc
+clear all
+#x=linspace(0,pi);
+subplot (2, 1, 1)
+fplot(@sin, [-10, 10])
+sin (0)
+function y = sin (x)
+  y = cos (x);
+
+endfunction
+subplot (2, 1, 2)
+fplot(@sin, [-10, 10])
+sin (0)
+builtin ("sin", 0)
+#With no arguments, return a structure containing the current autoload map.
+isa(autoload(),'struct')
+#octaveMissing
+##### SOURCE END #####
+-->
+</body>
+</html>

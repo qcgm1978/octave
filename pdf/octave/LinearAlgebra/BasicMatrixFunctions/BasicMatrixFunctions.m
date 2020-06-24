@@ -1,0 +1,1 @@
+clcclear allassert1(matrix_type([1:3;4:6;7:9]'  ),'Full')

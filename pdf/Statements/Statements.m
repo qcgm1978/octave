@@ -1,2 +1,0 @@
-assert(isbool([1,0]),logical(0))assert(logical([1,0]),logical([true,false]))isequal(all ([1,0](:)),logical(1)==1&logical(0)==1,0,false)x=5;y=6;assert(rem (x, 2) !=0)assert(rem (y, 2) ,0)assert(a=f(5),'odd')assert(a=f(6),'even')assert(a=f(9),'3n')function y=f(x)  if (rem (x, 2) == 0)    y="even";    elseif (rem (x, 3) == 0)      y= "3n";      else        y='odd';      endif
-    endfunction

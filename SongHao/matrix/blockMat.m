@@ -24,3 +24,10 @@ assert1(find(normMat1),[1;9])
 assert1(find(normMat2),[1;9])
 assert1(size(normMat2),[7 8])
 assert1(size(normMat),[7,7])
+normMat(normMat==1)=2;
+A=normMat;
+normMat(normMat==2)=3;
+B=normMat;
+normMat(normMat==3)=2*3;
+C=normMat;
+assert1(A*B,C)

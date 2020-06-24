@@ -1,0 +1,1 @@
+assert(sqrt(4),2)x=2;y=0;assert(sqrt (x^2 + y^2),2)n=m=2;assert(ones (n, m),[1,1;1,1])assert(rand ()<1)a=ones(2,2);decomposition=[-0.70711  -0.70711  -0.70711   0.70711];[u1, s, v] = svd (a);isequal(size(u1),size(v),size(decomposition));assert(s,[2.0000e+00            0            0   1.4349e-17],4e-22)

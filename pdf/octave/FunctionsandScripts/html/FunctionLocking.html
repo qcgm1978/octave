@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FunctionLocking</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: 'all' } }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<style>
+body > * {
+  max-width: 42em;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+pre, code {
+  max-width: 50em;
+  font-family: monospace;
+}
+pre.oct-code {
+  border: 1px solid Grey;
+  padding: 5px;
+}
+pre.oct-code-output {
+  margin-left: 2em;
+}
+span.comment {
+  color: ForestGreen;
+}
+span.keyword {
+  color: Blue;
+}
+span.string {
+  color: DarkOrchid;
+}
+footer {
+  margin-top: 2em;
+  font-size: 80%;
+}
+a, a:visited {
+  color: Blue;
+}
+h2 {
+  font-family: "Roboto Condensed", serif;
+  margin-top: 1.5em;
+}
+h2 a, h2 a:visited {
+  color: Black;
+}
+</style>
+
+</head>
+<body>
+<h1>FunctionLocking</h1>
+
+
+<pre class="oct-code">clc
+clear
+<span class="comment">#function ret=my_function ()</span>
+<span class="comment">#  mlock ();</span>
+<span class="comment">#  ret=1;</span>
+<span class="comment">#endfunction</span>
+my_function ()
+<span class="keyword">if</span>(mislocked (<span class="string">"my_function"</span>))
+munlock (<span class="string">"my_function"</span>);
+mislocked (<span class="string">"my_function"</span>)
+<span class="keyword">endif</span>
+
+<span class="keyword">function</span> count_calls ()
+mlock ();
+<span class="keyword">persistent</span> calls = 0;
+printf (<span class="string">"count_calls() has been called %d times\n"</span>, ++calls);
+<span class="keyword">endfunction</span>
+count_calls ();
+clear count_calls</pre>
+
+<pre class="oct-code-output">error: 'my_function' undefined near line 5 column 1
+	in:
+
+clc
+clear
+#function ret=my_function ()
+#  mlock ();
+#  ret=1;
+#endfunction
+my_function ()
+if(mislocked ("my_function"))
+munlock ("my_function");
+mislocked ("my_function")
+endif
+
+function count_calls ()
+mlock ();
+persistent calls = 0;
+printf ("count_calls() has been called %d times\n", ++calls);
+endfunction
+count_calls ();
+clear count_calls</pre>
+
+<footer>
+<hr>
+<a href="https://www.octave.org">Published with GNU Octave 5.2.0</a>
+</footer>
+<!--
+##### SOURCE BEGIN #####
+clc
+clear
+#function ret=my_function ()
+#  mlock ();
+#  ret=1;
+#endfunction
+my_function ()
+if(mislocked ("my_function"))
+munlock ("my_function");
+mislocked ("my_function")
+endif
+
+function count_calls ()
+mlock ();
+persistent calls = 0;
+printf ("count_calls() has been called %d times\n", ++calls);
+endfunction
+count_calls ();
+clear count_calls
+##### SOURCE END #####
+-->
+</body>
+</html>

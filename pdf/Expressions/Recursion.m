@@ -1,2 +1,0 @@
-global fact num=0function retval = fact (n)  if (n > 0)    retval = n * fact (n-1); #A recursive function is one which calls itself, either directly or indirectly    else    retval = 1;  endif  endfunctionassert(  fact(3),6)assert(max_recursion_depth,256)assert(max_stack_depth,1024)function foo()  global num  num++;  foo()endfunction
-fail('foo()','max_recursion_depth exceeded')assert(num,max_recursion_depth)#the variable max_stack_depth specifies a limit to the depth of function callsclear

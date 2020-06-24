@@ -1,0 +1,1 @@
+clcclear allrandMat=rand(10);detMat=det(randMat);assert1(transpose(transpose(randMat)),randMat)assert1(det(transpose(randMat)),detMat)colNum=randi([1,4]);col=randMat(:,colNum);randMat(:,colNum)=randMat(:,10-colNum);randMat(:,10-colNum)=col;assert1(detMat,-det(randMat))

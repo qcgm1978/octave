@@ -1,0 +1,1 @@
+clcclear allx.a = 1;x.b = [1, 2; 3, 4] ;x.c = "string";i=0;for [val, key] = x  ++i;  key;  val ;endforisequal(i,3)

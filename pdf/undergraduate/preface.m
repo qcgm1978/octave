@@ -1,0 +1,1 @@
+clcclear all#I know of no better tactic than the illustration of exciting principles by well-chosen particulars.#{If you really wish to learnyou must mount a machineand become acquainted with its tricksby actual trial.#}

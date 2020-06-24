@@ -1,0 +1,1 @@
+global func1func1()function y = func1 (x)      y = func2 (x);endfunction

@@ -1,0 +1,1 @@
+#How to round off elements in a matrix in Octave:mymatrix=[100.1234567, 2.12345; 3.1234567891, 4.1234];a=[[1,2]]#rows(a)X = [3,2;2,-2;4,6;3,1]#rows(A)
