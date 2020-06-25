@@ -1,0 +1,1 @@
+function mat=getNaturalSquare(n=3,byRow=false)  if(isbool(n))  byRow=n;  n=3;endiforder=n;mat=zeros(order);for i=1:order^2  mat(i)=i;endfor if(byRow)mat=transpose(mat);endifendfunction
