@@ -1,0 +1,2 @@
+function val=getLaplaceExpansion(mat=[],row)  val=0;  eleMat=[];  for i=1:columns(mat)#    val+=mat(row,i)*getAdjointMat(mat,row,i);    eleMat(i)=mat(row,i)*getAdjointMat(mat,row,i);    endfor    val=sum(eleMat);
+endfunction

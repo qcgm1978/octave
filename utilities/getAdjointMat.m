@@ -1,4 +1,4 @@
-function val=getAdjointMat(mat,varargin)
+function [val,alComp]=getAdjointMat(mat,varargin)
   complement=mat;
   if(length(varargin))
   row=varargin{1};
@@ -11,6 +11,7 @@ function val=getAdjointMat(mat,varargin)
       val(col,row)=(getAlgeComp(complement,row,col));
     endfor
   endif
+  alComp=transpose(val);
 endfunction
 function val=getAlgeComp(complement,row,col)  #将余子式Mₒₑ再乘以-1的o+e次幂记为Aₒₑ，Aₒₑ叫做元素aₒₑ的代数余子式。
   alMinor=getComplementMinor(complement,row,col);

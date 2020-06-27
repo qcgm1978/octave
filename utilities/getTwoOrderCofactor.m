@@ -1,0 +1,2 @@
+function [matDet,eleMat,cofactor,al]=getTwoOrderCofactor(mat,row1=1,row2=2,col1=1,col2=2)  if(row1>row2)  [row1,row2]=deal(row2,row1);endif if(col1>col2)[col1,col2]=deal(col2,col1);endif  eleMat=mat([row1,row2],[col1,col2]);matDet=det(eleMat);remain=mat;remain([row1,row2],:)=[];remain(:,[col1,col2])=[];cofactor=det(remain);al=(-1)^(row1+row2+col1+col2)*cofactor;
+endfunction
