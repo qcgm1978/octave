@@ -14,4 +14,24 @@ rand_10x1_data1 = randi([500,2500],1,10);
  title ({"Housing Price Prediction."});
  xlabel('Size in Feet')
 ylabel("Price($)\nin 1000's")
+hold off
+y=malig=randp(.5,1,10);
+x=tumorSize=1:10;
+ scatter(x,y,100,sqrt ( y.^2),'filled')
+ labelX=xlabel('Tumor Size');
+title ({"Breast cancer (malignant,belign)"});
+text(-.8,0,'O(N)')
+ylabel("Malignant")
+clf
+hold on
+x=1:20;
+y=randi([1,20],1,10);
+z=randi([20,50],1,10);
+yz=[y,z];
+color=colormap (jet (20));
+ scatter(x,yz,100,color,'x')
+#title ({"Breast cancer (malignant,belign)"});
+text(-.8,0,'O(N)')
+ylabel("Age")
+plot(x,40:-2:1)
  shg
