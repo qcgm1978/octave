@@ -1,0 +1,12 @@
+# Created by Octave 4.4.1, Sun Jun 28 20:29:47 2020 CST <zhanghongliang@192.168.1.100>
+# name: A
+# type: matrix
+# rows: 5
+# columns: 3
+ 1 2 3
+ 4 5 6
+ 7 8 9
+ 11 12 13
+ 20 21 22
+
+
