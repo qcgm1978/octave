@@ -28,3 +28,16 @@ fail('cellfun ("tolower", {"Foo", "Bar","FooBar"},             "UniformOutput", 
 aCell=cellfun ("tolower", {"Foo", "Bar", "FooBar"},
 "UniformOutput", false);
 assert1(aCell,{'foo','bar','foobar'})
+function y = foo (s, x), y = NaN; endfunction
+  facMat=cellfun ("factorial", {-1,2}, "ErrorHandler", @foo);
+  assert1(facMat,[NaN,factorial(2)],[NaN,2])
+  a = {rand(3)};
+  v = cellfun (@(x) det (x), a); # compute determinants
+  v1 = cellfun (@det, a); # faster, the interpreter is not involved in the internal loop. 
+  assert1( v,v1)
+  s.name1 = "John Smith";
+  s.name2 = "Jill Jones";
+  aStruct=structfun (@(x) regexp (x, '(\w+)$', "matches"){1}, s,
+  "UniformOutput", false);
+  twoStruct=struct('name1','Smith','name2','Jones');
+  assert1(aStruct,twoStruct)
