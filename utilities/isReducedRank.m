@@ -1,0 +1,1 @@
+function bool=isReducedRank(mat)  rank1=getRank(mat);  bool=rank1<min(size(mat));  endfunction

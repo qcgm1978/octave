@@ -1,2 +1,2 @@
-function [matDet,eleMat,cofactor,al]=getNOrderCofactor(mat=[],row=[1,2],cols=[1,2])eleMat=mat(row,cols);matDet=det(eleMat);remain=mat;remain(row,:)=[];remain(:,cols)=[];if(issquare(remain))cofactor=det(remain);elsecofactor=det(eleMat);endif
+function [matDet,eleMat,cofactor,al]=getNOrderCofactor(mat=[],row=[1,2],cols=[1,2])eleMat=mat(row,cols);matDet=det(eleMat);[cofactor,remain]=getComplementMinor(mat,row,cols);if(~issquare(remain))cofactor=det(eleMat);endif
 al=(-1)^(sum(row)+sum(cols))*cofactor;endfunction
