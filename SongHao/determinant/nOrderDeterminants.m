@@ -1,1 +1,1 @@
-clcclear allA=[1   2   53   4   67   8   9];isequal(detVal=getDet(A),-2)assert1(det(A),detVal,1e-14)B=rand(4,4);assert1(det(B),getDet(B),1e-19)==0assert1(det(B),getDet(B),1e-14)
+clcclear allA=[1   2   53   4   67   8   9];assert1(detVal=getDet(A),det(A),-2)B=rand(4,4);assert1(det(B),getDet(B))assert1(det(B),getDet(B))assert1(getDet(2),det(2),2)

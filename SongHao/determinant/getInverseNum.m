@@ -1,1 +1,1 @@
-function num=getInverseNum(n)  num=0;if(isscalar(n))num=n*(n-1)/2;elsenum=0;for i=1:length(n)  for m=1:length(n)-1    if(i+m<=length(n)&&n(i)>n(i+m))    num++;    endif    endfor  endforendifendfunction
+function num=getInverseNum(n)  num=0;if(isscalar(n))num=n*(n-1)/2;elsenum=0;for i=1:length(n)-1  child=n(i+1:end);  negDiff=child(child<n(i));  num+=length(negDiff);  endforendifendfunction
