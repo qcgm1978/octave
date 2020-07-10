@@ -17,3 +17,7 @@ assert1(asgn, subsasgn (val, idx, 0))
 idx={};
 asgn= asgnsubs(val,idx,0);
 asgn==0
+V=1:4;
+a = polynomial (V); 
+b = 1:10;
+assert1(b(a),V)
